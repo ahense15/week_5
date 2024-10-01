@@ -85,5 +85,67 @@ fruits = ["apple", "orange", "banana", "coconut", "strawberry", "kiwi", "dragonf
 prints(fruits.index("coconut"))
 
 # print(fruits[0])
+# for fruit in fruits:
+   # print(fruit)
+
+
+fruits = {"apple", "orange", "banana", "coconut", "kiwi", "plum", "avacado"}
+
+ # fruits.pop()      pops off the first element in each instance
+    # fruits.clear()      clears the set
+    # fruits.add("pineapple")       adds an element
+    # fruits.remove("apple")        removes an element
+# print("apple" in fruits)      chacks if a specific element is in the set and will print a boolean
+
+print(fruits)
+
+# print(fruits[3])  doesn't work because sets are random and unordered.
+
+fruits = ("apple", "orange", "banana", "coconut", "kiwi", "plum", "avacado")
+
+# print(fruits.count("coconut"))
+# print(fruits.index("apple"))
+
+print(fruits)
 for fruit in fruits:
     print(fruit)
+
+#------------------------------------------------------------------------------------------------------------------
+# dictionaries = a collection of {key:value} pairs, ordered and changeable. no duplicates
+    
+capitals = {
+    "USA": "Washington D.C.",
+    "India": "New Dehli",
+    "China": "Beijing",
+    "Russia": "Moscow"
+}
+
+# print(dir(capitals))
+# print(help(capitals))
+# print(capitals(capitals.get("Japan"))
+
+if capitals.get("Russia"):
+    print("the capital exists")
+else:
+    print("That doesnt exist")
+
+# capitals.update({"Germany": "Berlin"})
+# capitals.update({"USA": "Detroit"})
+# capitals.pop("China")
+# capitals.popitem()
+# capitals.clear()
+
+print(capitals)
+
+keys = capitals.keys()
+
+for key in capitals():
+    print(keys)
+
+values = capitals.values()
+for value in capitals.values():
+    print(value)
+
+items = capitals.items()
+for key, value in capitals.items():
+    print(f"{key}: {value}")
